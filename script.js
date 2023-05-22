@@ -19,7 +19,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+SOFTWARE
 */
 
 'use strict';
@@ -52,6 +52,12 @@ googleLink.addEventListener('click', e => {
 });
 
 // Simulation section
+window.addEventListener('keydown', e => {
+    if (e.code === 'KeyK') { 
+        config.PAUSED = true;
+    } 
+    // ... Any other key handlers
+});
 
 const canvas = document.getElementsByTagName('canvas')[0];
 resizeCanvas();
