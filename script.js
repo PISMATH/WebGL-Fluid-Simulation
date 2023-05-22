@@ -54,7 +54,7 @@ googleLink.addEventListener('click', e => {
 // Simulation section
 window.addEventListener('keydown', e => {
     if (e.code === 'KeyK') { 
-        config.PAUSED = true;
+        config.PAUSED = !config.PAUSED;
     } 
     // ... Any other key handlers
 });
